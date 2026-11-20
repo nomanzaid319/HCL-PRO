@@ -15,6 +15,9 @@ import src.ui as ui
 
 st.set_page_config(page_title="TAT & Cycle Time Analytics", page_icon="⏱️", layout="wide")
 
+# Inject custom executive CSS & Google Fonts
+ui.inject_custom_theme()
+
 df_master = load_master_claims_data()
 
 # Read active sidebar filters from session state

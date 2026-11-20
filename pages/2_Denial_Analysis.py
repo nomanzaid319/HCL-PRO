@@ -16,6 +16,9 @@ import src.ui as ui
 
 st.set_page_config(page_title="Denial & Repudiation Analysis", page_icon="🚫", layout="wide")
 
+# Inject custom executive CSS & Google Fonts
+ui.inject_custom_theme()
+
 df_master = load_master_claims_data()
 
 policy_types = st.session_state.get("selected_policy_types", None)
