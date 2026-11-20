@@ -1,0 +1,26 @@
+provider_id,provider_name,provider_type,city,state,empanelment_status,tariff_tier
+PRV-101,Apollo Supercare Hospital,Hospital,Chandigarh,Punjab,Empaneled Network,Tier 1
+PRV-102,Fortis Escorts Hospital,Hospital,Patna,Bihar,Empaneled Network,Tier 3
+PRV-103,Max Healthcare Institute,Hospital,Bhopal,Madhya Pradesh,Empaneled Network,Tier 1
+PRV-104,Apex Multispeciality Hospital,Hospital,Kolkata,West Bengal,Under Review,Tier 3
+PRV-105,Manipal Hospital,Hospital,Delhi,Delhi,Empaneled Network,Tier 3
+PRV-106,Medanta The Medicity,Hospital,Patna,Bihar,Empaneled Network,Tier 1
+PRV-107,Narayana Health City,Hospital,Chennai,Tamil Nadu,Empaneled Network,Tier 3
+PRV-108,KIMS Global Hospital,Hospital,Kochi,Kerala,Empaneled Network,Tier 2
+PRV-109,Lilavati Hospital & Research Centre,Hospital,Indore,Madhya Pradesh,Empaneled Network,Tier 2
+PRV-110,Sir Ganga Ram Hospital,Hospital,Ahmedabad,Gujarat,Empaneled Network,Tier 2
+PRV-111,Ruby Hall Clinic,Hospital,Ahmedabad,Gujarat,Empaneled Network,Tier 3
+PRV-112,Sahyadri Super Hospital,Hospital,Delhi,Delhi,Empaneled Network,Tier 3
+PRV-113,Maruti Authorized Workshop Hub,Automobile Garage,Noida,Uttar Pradesh,Empaneled Network,Tier 2
+PRV-114,Hyundai Star Express Care,Automobile Garage,Pune,Maharashtra,Empaneled Network,Tier 2
+PRV-115,Tata Motors Service Lounge,Automobile Garage,Chennai,Tamil Nadu,Empaneled Network,Tier 2
+PRV-116,Metro Auto Care & Bodyworks,Automobile Garage,Patna,Bihar,Under Review,Tier 3
+PRV-117,Bosch Car Service Care,Automobile Garage,Patna,Bihar,Empaneled Network,Tier 2
+PRV-118,Mahindra First Choice Service,Automobile Garage,Hyderabad,Telangana,Empaneled Network,Tier 3
+PRV-119,Speedy Wheels Repair Hub,Automobile Garage,Kochi,Kerala,Empaneled Network,Tier 2
+PRV-120,Honda Pro Care Garage,Automobile Garage,Jaipur,Rajasthan,Empaneled Network,Tier 2
+PRV-121,Autocraft Collision Center,Automobile Garage,Indore,Madhya Pradesh,Empaneled Network,Tier 2
+PRV-122,MediAssist Insurance TPA,TPA,Delhi,Delhi,Empaneled Network,Tier 1
+PRV-123,Paramount Health Services TPA,TPA,Kochi,Kerala,Empaneled Network,Tier 1
+PRV-124,Vidal Health TPA Services,TPA,Kochi,Kerala,Empaneled Network,Tier 1
+PRV-125,Heritage Health Insurance TPA,TPA,Delhi,Delhi,Empaneled Network,Tier 1

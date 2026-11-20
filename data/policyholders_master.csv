@@ -1,0 +1,101 @@
+policyholder_id,full_name,age,gender,city,state,region,tenure_months
+POL-HLD-1001,Priya Kapoor,47,Female,Bengaluru,Karnataka,South,34
+POL-HLD-1002,Yash Singh,40,Male,Ahmedabad,Gujarat,West,78
+POL-HLD-1003,Aarav Gupta,49,Male,Jaipur,Rajasthan,North,32
+POL-HLD-1004,Aarav Saxena,58,Male,Jaipur,Rajasthan,North,94
+POL-HLD-1005,Pallavi Das,39,Female,Chandigarh,Punjab,North,60
+POL-HLD-1006,Priya Nair,39,Female,Patna,Bihar,East,46
+POL-HLD-1007,Suresh Mishra,59,Male,Delhi,Delhi,North,14
+POL-HLD-1008,Anil Reddy,50,Male,Bengaluru,Karnataka,South,106
+POL-HLD-1009,Alok Saxena,36,Male,Delhi,Delhi,North,51
+POL-HLD-1010,Sanjay Pandey,47,Male,Kochi,Kerala,South,76
+POL-HLD-1011,Rajesh Verma,36,Male,Chandigarh,Punjab,North,101
+POL-HLD-1012,Rajesh Mehta,36,Male,Delhi,Delhi,North,51
+POL-HLD-1013,Sunil Reddy,44,Male,Lucknow,Uttar Pradesh,North,50
+POL-HLD-1014,Vikas Joshi,20,Male,Ahmedabad,Gujarat,West,80
+POL-HLD-1015,Pallavi Kapoor,23,Female,Chandigarh,Punjab,North,23
+POL-HLD-1016,Manoj Pandey,35,Male,Chandigarh,Punjab,North,90
+POL-HLD-1017,Rohan Mehta,30,Male,Pune,Maharashtra,West,106
+POL-HLD-1018,Manoj Gupta,45,Male,Jaipur,Rajasthan,North,75
+POL-HLD-1019,Aarti Rao,32,Female,Indore,Madhya Pradesh,Central,53
+POL-HLD-1020,Swati Banerjee,26,Female,Noida,Uttar Pradesh,North,36
+POL-HLD-1021,Yash Saxena,58,Male,Bengaluru,Karnataka,South,98
+POL-HLD-1022,Radha Iyer,39,Female,Kochi,Kerala,South,31
+POL-HLD-1023,Manoj Bhatia,42,Other,Indore,Madhya Pradesh,Central,14
+POL-HLD-1024,Pooja Patel,26,Female,Lucknow,Uttar Pradesh,North,104
+POL-HLD-1025,Shilpa Gupta,36,Female,Kolkata,West Bengal,East,51
+POL-HLD-1026,Kiran Bhatia,43,Female,Bengaluru,Karnataka,South,73
+POL-HLD-1027,Priya Chopra,29,Female,Delhi,Delhi,North,90
+POL-HLD-1028,Meera Pandey,46,Female,Chennai,Tamil Nadu,South,17
+POL-HLD-1029,Rahul Banerjee,35,Male,Mumbai,Maharashtra,West,95
+POL-HLD-1030,Meera Bhatia,38,Female,Lucknow,Uttar Pradesh,North,67
+POL-HLD-1031,Swati Kumar,35,Female,Jaipur,Rajasthan,North,22
+POL-HLD-1032,Rahul Saxena,62,Male,Mumbai,Maharashtra,West,79
+POL-HLD-1033,Aarav Singh,41,Male,Kochi,Kerala,South,115
+POL-HLD-1034,Sachin Mehta,30,Other,Pune,Maharashtra,West,33
+POL-HLD-1035,Sunita Gupta,51,Female,Indore,Madhya Pradesh,Central,107
+POL-HLD-1036,Nikhil Patel,28,Male,Noida,Uttar Pradesh,North,87
+POL-HLD-1037,Nikhil Nair,44,Male,Bengaluru,Karnataka,South,70
+POL-HLD-1038,Jyoti Rao,20,Female,Jaipur,Rajasthan,North,94
+POL-HLD-1039,Vikas Pandey,27,Male,Kochi,Kerala,South,59
+POL-HLD-1040,Kiran Singh,44,Female,Chandigarh,Punjab,North,31
+POL-HLD-1041,Aarav Agarwal,50,Male,Chandigarh,Punjab,North,78
+POL-HLD-1042,Rajesh Sethi,43,Male,Pune,Maharashtra,West,32
+POL-HLD-1043,Rohan Mishra,40,Male,Ahmedabad,Gujarat,West,68
+POL-HLD-1044,Vikas Chauhan,38,Male,Jaipur,Rajasthan,North,72
+POL-HLD-1045,Pankaj Agarwal,25,Male,Indore,Madhya Pradesh,Central,34
+POL-HLD-1046,Jyoti Rao,34,Female,Delhi,Delhi,North,15
+POL-HLD-1047,Geeta Das,36,Female,Patna,Bihar,East,62
+POL-HLD-1048,Ananya Chopra,53,Female,Delhi,Delhi,North,10
+POL-HLD-1049,Deepak Singh,45,Male,Chandigarh,Punjab,North,27
+POL-HLD-1050,Alok Patel,22,Male,Patna,Bihar,East,26
+POL-HLD-1051,Aditya Gupta,45,Male,Bhopal,Madhya Pradesh,Central,106
+POL-HLD-1052,Pallavi Singh,37,Female,Pune,Maharashtra,West,86
+POL-HLD-1053,Aarav Gupta,34,Other,Chandigarh,Punjab,North,24
+POL-HLD-1054,Gaurav Rao,48,Male,Kolkata,West Bengal,East,118
+POL-HLD-1055,Arjun Sharma,53,Male,Kolkata,West Bengal,East,36
+POL-HLD-1056,Kiran Kumar,52,Female,Patna,Bihar,East,92
+POL-HLD-1057,Pallavi Chopra,32,Female,Indore,Madhya Pradesh,Central,22
+POL-HLD-1058,Suresh Verma,38,Male,Pune,Maharashtra,West,98
+POL-HLD-1059,Rohan Agarwal,45,Male,Indore,Madhya Pradesh,Central,67
+POL-HLD-1060,Nisha Nair,52,Female,Pune,Maharashtra,West,68
+POL-HLD-1061,Rahul Gupta,36,Male,Ahmedabad,Gujarat,West,89
+POL-HLD-1062,Ishita Singh,39,Female,Chandigarh,Punjab,North,77
+POL-HLD-1063,Shilpa Gupta,29,Female,Patna,Bihar,East,87
+POL-HLD-1064,Nisha Mishra,28,Female,Bengaluru,Karnataka,South,29
+POL-HLD-1065,Aarti Mehta,50,Female,Bengaluru,Karnataka,South,53
+POL-HLD-1066,Sunil Kumar,56,Male,Bhopal,Madhya Pradesh,Central,43
+POL-HLD-1067,Sunita Sharma,41,Female,Bhopal,Madhya Pradesh,Central,82
+POL-HLD-1068,Suresh Gupta,53,Other,Jaipur,Rajasthan,North,67
+POL-HLD-1069,Anil Gupta,45,Male,Chandigarh,Punjab,North,50
+POL-HLD-1070,Alok Saxena,34,Male,Hyderabad,Telangana,South,81
+POL-HLD-1071,Pallavi Bhatia,45,Other,Mumbai,Maharashtra,West,88
+POL-HLD-1072,Divya Chopra,58,Female,Delhi,Delhi,North,115
+POL-HLD-1073,Vikram Singh,41,Male,Noida,Uttar Pradesh,North,37
+POL-HLD-1074,Suresh Sethi,59,Male,Chennai,Tamil Nadu,South,29
+POL-HLD-1075,Meera Bhatia,19,Female,Indore,Madhya Pradesh,Central,35
+POL-HLD-1076,Ananya Gupta,51,Female,Patna,Bihar,East,109
+POL-HLD-1077,Aarav Mishra,42,Male,Noida,Uttar Pradesh,North,84
+POL-HLD-1078,Sneha Kapoor,38,Female,Bhopal,Madhya Pradesh,Central,73
+POL-HLD-1079,Pallavi Sharma,43,Female,Delhi,Delhi,North,12
+POL-HLD-1080,Vandana Patel,20,Female,Pune,Maharashtra,West,109
+POL-HLD-1081,Nikhil Patel,39,Male,Patna,Bihar,East,19
+POL-HLD-1082,Anil Verma,45,Male,Kochi,Kerala,South,29
+POL-HLD-1083,Tanvi Singh,58,Female,Kochi,Kerala,South,102
+POL-HLD-1084,Jyoti Malhotra,36,Female,Noida,Uttar Pradesh,North,33
+POL-HLD-1085,Sneha Das,33,Female,Mumbai,Maharashtra,West,25
+POL-HLD-1086,Aarti Das,36,Female,Chandigarh,Punjab,North,37
+POL-HLD-1087,Vishal Singh,52,Male,Kolkata,West Bengal,East,114
+POL-HLD-1088,Gaurav Mehta,45,Male,Jaipur,Rajasthan,North,107
+POL-HLD-1089,Geeta Kumar,36,Female,Chandigarh,Punjab,North,31
+POL-HLD-1090,Suresh Iyer,47,Male,Chennai,Tamil Nadu,South,38
+POL-HLD-1091,Meera Reddy,43,Female,Kolkata,West Bengal,East,89
+POL-HLD-1092,Aarti Mishra,52,Other,Mumbai,Maharashtra,West,17
+POL-HLD-1093,Meera Nair,34,Female,Bengaluru,Karnataka,South,7
+POL-HLD-1094,Kunal Reddy,38,Male,Chennai,Tamil Nadu,South,58
+POL-HLD-1095,Nisha Singh,37,Female,Kolkata,West Bengal,East,118
+POL-HLD-1096,Meera Verma,25,Female,Patna,Bihar,East,3
+POL-HLD-1097,Nikhil Chopra,45,Male,Jaipur,Rajasthan,North,49
+POL-HLD-1098,Vikas Mishra,44,Male,Chennai,Tamil Nadu,South,87
+POL-HLD-1099,Varsha Kumar,42,Female,Hyderabad,Telangana,South,88
+POL-HLD-1100,Arjun Sethi,39,Male,Hyderabad,Telangana,South,73

@@ -1,0 +1,37 @@
+
+====================================================================
+STEP 10: SYNTHETIC DATASET GENERATION & VALIDATION REPORT
+====================================================================
+Project: Insurance Claim Processing Analysis
+Student: Noman Zaid (Roll No: 2500320140103)
+Mentor: Ms. Shilpa
+Database File: data/app.db (SQLite with PRAGMA foreign_keys = ON)
+Excel Workbook: data/insurance_claims_data.xlsx
+CSV Exports: data/policyholders.csv, policies.csv, adjusters.csv, claims.csv
+
+1. TABLE ROW COUNTS & STRUCTURE AUDIT:
+--------------------------------------------------------------------
+- policyholders table : 120 rows (Target: 100+) | PK check: True
+- policies table      : 160 rows (Target: 150+) | PK check: True
+- adjusters table     : 15 rows (Target: 10-20)  | PK check: True
+- claims table        : 250 rows (Target: 250+) | PK check: True
+- vw_claims_analytics : 250 rows | Columns: 34 (Target: 30-40)
+
+2. REFERENTIAL INTEGRITY (FOREIGN KEY) CHECK:
+--------------------------------------------------------------------
+- Orphaned policies (invalid policyholder_id): 0
+- Orphaned claims (invalid policy_id):        0
+- Orphaned claims (invalid adjuster_id):      0
+Status: 100% Referential Integrity Verified.
+
+3. EMBEDDED ANALYTICAL PATTERNS IN GENERATED DATA:
+--------------------------------------------------------------------
+- Pattern A (Early-Inception Fraud Risk): Claims filed within 30 days of policy start exhibit higher anomaly scores (mean anomaly: 0.52 vs 0.20).
+- Pattern B (SLA Regional Variations): Regional breach percentages successfully distributed across North, West, South, and East zones.
+- Pattern C (Adjuster Caseloads): Active caseloads balanced across 15 adjusters with specialization tags.
+
+4. DATA QUALITY & PRIVACY AUDIT:
+--------------------------------------------------------------------
+- Real PII Check: Zero real names, addresses, or phone numbers used (Fictional Indian names generated deterministically).
+- Null primary keys / Foreign keys: 0 found.
+====================================================================
