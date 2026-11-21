@@ -10,94 +10,101 @@ import streamlit.components.v1 as components
 def inject_custom_theme():
     """
     Injects executive, modern CSS directly into the Streamlit DOM for a premium,
-    attention-grabbing InsurTech look (custom fonts, glassmorphism, glowing accents, and smooth hover effects).
+    high-contrast InsurTech look (custom fonts, crisp sidebar navigation, and smooth hover effects).
     """
     custom_css = """
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
 
     html, body, [class*="css"] {
-        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
     }
 
     /* Main background subtle gradient */
     .stApp {
-        background: linear-gradient(180deg, #F8FAFC 0%, #EDF2F7 100%);
+        background: #F8FAFC !important;
     }
 
-    /* Modern Card Container */
-    div[data-testid="stVerticalBlock"] > div[style*="border"] {
-        border-radius: 16px !important;
-        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
-        transition: all 0.25s ease-in-out !important;
-    }
-    div[data-testid="stVerticalBlock"] > div[style*="border"]:hover {
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1) !important;
-        transform: translateY(-2px) !important;
-    }
-
-    /* Streamlit Sidebar Custom Styling */
+    /* =========================================================
+       CRISP, HIGH-CONTRAST SIDEBAR (100% VISIBLE & LEGIBLE)
+       ========================================================= */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%) !important;
-        color: #F8FAFC !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
-    }
-    section[data-testid="stSidebar"] h1, 
-    section[data-testid="stSidebar"] h2, 
-    section[data-testid="stSidebar"] h3, 
-    section[data-testid="stSidebar"] label,
-    section[data-testid="stSidebar"] .stMarkdown p {
-        color: #E2E8F0 !important;
-    }
-    section[data-testid="stSidebar"] hr {
-        border-color: rgba(255, 255, 255, 0.12) !important;
+        background-color: #F8FAFC !important;
+        border-right: 1px solid #E2E8F0 !important;
     }
 
-    /* Sidebar Navigation Links */
-    div[data-testid="stSidebarNav"] li div a {
+    /* Sidebar Navigation Links - Razor Sharp Visibility */
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] li a {
+        background-color: transparent !important;
         border-radius: 10px !important;
+        padding: 8px 12px !important;
+        margin-bottom: 2px !important;
         transition: all 0.2s ease !important;
-        color: #CBD5E1 !important;
-        font-weight: 500 !important;
     }
-    div[data-testid="stSidebarNav"] li div a:hover {
-        background: rgba(59, 130, 246, 0.15) !important;
-        color: #60A5FA !important;
-        transform: translateX(4px) !important;
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] li a span {
+        color: #1E293B !important;
+        font-weight: 700 !important;
+        font-size: 13.5px !important;
+        letter-spacing: -0.01em !important;
     }
-    div[data-testid="stSidebarNav"] li div[aria-selected="true"] a {
-        background: linear-gradient(90deg, rgba(37, 99, 235, 0.3) 0%, rgba(37, 99, 235, 0.1) 100%) !important;
-        color: #93C5FD !important;
-        border-left: 3px solid #3B82F6 !important;
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] li a:hover {
+        background-color: #F1F5F9 !important;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] li a:hover span {
+        color: #2563EB !important;
+    }
+
+    /* Active Selected Page in Sidebar */
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] li div[aria-selected="true"] a {
+        background-color: #EFF6FF !important;
+        border-left: 4px solid #2563EB !important;
+    }
+    section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] li div[aria-selected="true"] a span {
+        color: #1D4ED8 !important;
+        font-weight: 800 !important;
+    }
+
+    /* All sidebar labels, headers, and markdown text */
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] label p,
+    section[data-testid="stSidebar"] .stMarkdown p,
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        color: #0F172A !important;
         font-weight: 700 !important;
     }
 
-    /* Primary Buttons Styling */
+    /* Sidebar Divider */
+    section[data-testid="stSidebar"] hr {
+        border-color: #E2E8F0 !important;
+        margin: 12px 0 !important;
+    }
+
+    /* Buttons Styling */
     .stButton > button {
         border-radius: 12px !important;
-        font-weight: 600 !important;
-        letter-spacing: 0.02em !important;
-        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.01em !important;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
     }
     .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35) !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25) !important;
     }
 
     /* Download Buttons */
     .stDownloadButton > button {
         border-radius: 12px !important;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
         background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
         color: #FFFFFF !important;
         border: none !important;
-        box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3) !important;
-        transition: all 0.2s ease !important;
+        box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25) !important;
     }
     .stDownloadButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45) !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35) !important;
     }
 
     /* Metric cards styling */
@@ -106,12 +113,7 @@ def inject_custom_theme():
         padding: 16px 20px !important;
         border-radius: 14px !important;
         border: 1px solid #E2E8F0 !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
-        transition: all 0.2s ease !important;
-    }
-    [data-testid="stMetric"]:hover {
-        border-color: #3B82F6 !important;
-        box-shadow: 0 8px 16px rgba(59, 130, 246, 0.08) !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
     }
 
     /* Custom Scrollbars */
@@ -135,23 +137,23 @@ def inject_custom_theme():
 
 def render_sidebar_profile():
     """
-    Renders an executive author and academic affiliation card inside the sidebar.
+    Renders an executive, high-contrast author and academic affiliation card inside the sidebar.
     """
     st.sidebar.markdown("""
-    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 14px; padding: 14px; margin-bottom: 16px;">
+    <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
         <div style="display: flex; align-items: center; gap: 10px;">
-            <div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%); display: flex; align-items: center; justify-content: center; font-weight: 800; color: #FFF; font-size: 14px; box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%); display: flex; align-items: center; justify-content: center; font-weight: 800; color: #FFFFFF; font-size: 13px; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);">
                 NZ
             </div>
             <div>
-                <div style="font-weight: 700; font-size: 13px; color: #FFFFFF; line-height: 1.2;">Noman Zaid</div>
-                <div style="font-size: 11px; color: #94A3B8;">Roll: 2500320140103</div>
+                <div style="font-weight: 800; font-size: 13px; color: #0F172A; line-height: 1.2;">Noman Zaid</div>
+                <div style="font-size: 11px; color: #64748B; font-weight: 600;">Roll: 2500320140103</div>
             </div>
         </div>
-        <div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 11px; color: #CBD5E1; display: flex; flex-direction: column; gap: 2px;">
+        <div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #E2E8F0; font-size: 11px; color: #334155; display: flex; flex-direction: column; gap: 3px;">
             <div>🏫 <b>ABES Engineering College</b></div>
             <div>🎓 MCA 2nd Year (Data Analytics)</div>
-            <div>👩‍🏫 Mentor: <span style="color: #93C5FD; font-weight: 600;">Ms. Shilpa</span></div>
+            <div>👩‍🏫 Mentor: <span style="color: #1D4ED8; font-weight: 700;">Ms. Shilpa</span></div>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -181,7 +183,6 @@ def render_header(title: str, subtitle: str, badge_text: str = "PRODUCTION ENTER
     </head>
     <body class="bg-transparent m-0 p-0 antialiased">
         <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-blue-950 p-6 rounded-2xl glow-effect text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative overflow-hidden">
-            <!-- Background accent glow -->
             <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
             
             <div class="relative z-10">
@@ -224,28 +225,28 @@ def render_ticker_ribbon():
     </head>
     <body class="bg-transparent m-0 p-0">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 py-1">
-            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200/80 shadow-xs">
+            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 shadow-xs">
                 <div class="w-7 h-7 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">⚡</div>
                 <div>
                     <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Engine Status</div>
                     <div class="text-xs font-extrabold text-slate-800">Operational (100%)</div>
                 </div>
             </div>
-            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200/80 shadow-xs">
+            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 shadow-xs">
                 <div class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-xs">₹</div>
                 <div>
                     <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Disbursement</div>
                     <div class="text-xs font-extrabold text-emerald-700">₹ 4.34 Cr Disbursed</div>
                 </div>
             </div>
-            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200/80 shadow-xs">
+            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 shadow-xs">
                 <div class="w-7 h-7 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xs">⚖️</div>
                 <div>
                     <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">IRDAI SLA Compliance</div>
                     <div class="text-xs font-extrabold text-slate-800">9.0d Median TAT</div>
                 </div>
             </div>
-            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200/80 shadow-xs">
+            <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 shadow-xs">
                 <div class="w-7 h-7 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-xs">🛡️</div>
                 <div>
                     <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">SIU Fraud Gate</div>

@@ -34,16 +34,16 @@ df_master = load_master_claims_data()
 st.sidebar.markdown("""
 <div style="text-align: center; margin-bottom: 8px;">
     <span style="font-size: 38px;">🛡️</span>
-    <h2 style="color: #FFFFFF; margin: 4px 0 0 0; font-size: 18px; font-weight: 800; letter-spacing: -0.02em;">InsurAnalytics Portal</h2>
-    <p style="color: #94A3B8; font-size: 11px; margin: 0;">Enterprise Claims Decision Engine</p>
+    <h2 style="color: #0F172A; margin: 4px 0 0 0; font-size: 18px; font-weight: 800; letter-spacing: -0.02em;">InsurAnalytics Portal</h2>
+    <p style="color: #64748B; font-size: 11px; margin: 0; font-weight: 600;">Enterprise Claims Decision Engine</p>
 </div>
 """, unsafe_allow_html=True)
 
 # Render author academic profile card
 ui.render_sidebar_profile()
 
-st.sidebar.markdown("<hr style='margin: 12px 0; border-color: rgba(255,255,255,0.1);'>", unsafe_allow_html=True)
-st.sidebar.markdown("<p style='font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #94A3B8; margin-bottom: 8px;'>🔍 Dynamic Filter Suite</p>", unsafe_allow_html=True)
+st.sidebar.markdown("<hr style='margin: 12px 0; border-color: #E2E8F0;'>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #475569; margin-bottom: 8px;'>🔍 Dynamic Filter Suite</p>", unsafe_allow_html=True)
 
 all_policy_types = sorted(list(df_master["policy_type"].dropna().unique()))
 if "selected_policy_types" not in st.session_state:
@@ -92,11 +92,11 @@ if st.sidebar.button("↺ Reset All Filters", use_container_width=True):
     st.rerun()
 
 st.sidebar.markdown("""
-<div style="margin-top: 24px; padding: 12px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; font-size: 10.5px; color: #94A3B8;">
-    <div style="font-weight: 700; color: #CBD5E1; margin-bottom: 4px;">⚡ System Status</div>
-    <div>• SQLite 3NF Database: <span style="color: #4ADE80; font-weight: 600;">Connected</span></div>
-    <div>• Streamlit Cloud: <span style="color: #60A5FA; font-weight: 600;">Active Container</span></div>
-    <div>• Pytest Suite: <span style="color: #4ADE80; font-weight: 600;">14/14 Passed</span></div>
+<div style="margin-top: 24px; padding: 12px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; font-size: 11px; color: #334155;">
+    <div style="font-weight: 800; color: #0F172A; margin-bottom: 4px;">⚡ System Status</div>
+    <div>• SQLite 3NF Database: <span style="color: #15803D; font-weight: 700;">● Connected</span></div>
+    <div>• Streamlit Cloud: <span style="color: #2563EB; font-weight: 700;">● Active Container</span></div>
+    <div>• Pytest Suite: <span style="color: #15803D; font-weight: 700;">● 14/14 Passed</span></div>
 </div>
 """, unsafe_allow_html=True)
 
